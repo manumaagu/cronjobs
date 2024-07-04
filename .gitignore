@@ -1,0 +1,10 @@
+# .gitignore file
+
+node_modules
+
+# Ignore compiled files
+
+dist
+dist-next
+
+.env
