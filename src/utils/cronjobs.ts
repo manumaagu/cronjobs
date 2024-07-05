@@ -446,7 +446,7 @@ export async function checkStatistics() {
 
 
             const posts = JSON.parse(twitterMedia.posts!) ?? [];
-            const newPosts:any = [];
+            const newPosts: any = [];
 
             for (const post of posts) {
 
@@ -548,7 +548,7 @@ export async function checkStatistics() {
             };
 
             const posts = JSON.parse(linkedinMedia.posts!) ?? [];
-            const newPosts:any = [];
+            const newPosts: any = [];
 
             for (const post of posts) {
 
