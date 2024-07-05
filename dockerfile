@@ -6,10 +6,8 @@ COPY package.json ./
 
 RUN npm install
 
-COPY ./src/db ./db
+COPY src src
 
-COPY ./src/utils/cronjobs.ts ./utils
+RUN npm run build
 
-COPY ./src/day.ts ./
-
-COPY ./src/minute.ts ./
+ENTRYPOINT [ "npm", "run", "start" ]
