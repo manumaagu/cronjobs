@@ -1,12 +1,12 @@
-FROM node:20.11.1
+FROM node:alpine
 
 WORKDIR /app
 
-COPY package.json ./
+COPY *.json ./
 
 RUN npm install
 
-COPY src src
+COPY src/ ./src/
 
 RUN npm run build
 
